@@ -1,0 +1,1311 @@
+body {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.container-fluid {
+  max-width: 100%;
+  padding: 0px 40px;
+}
+
+.button {
+  height: 45px;
+  line-height: 45px;
+  background-color: #c46343;
+  color: #fff;
+  border: none;
+  padding: 0px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.button--wide {
+  padding: 0px 40px;
+}
+
+.button:hover {
+  background-color: #a84630;
+}
+
+.button i {
+  margin-left: 5px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button--secondary {
+  background-color: #51a5c1;
+  color: #fff;
+  font-weight: 600;
+}
+
+.button--secondary:hover {
+  background-color: #28648a;
+}
+
+p {
+  color: #0e1f23;
+  font-weight: 300;
+}
+
+.module {
+  position: relative;
+}
+
+.module-pattern__top {
+  position: absolute;
+  top: -5%;
+  right: 0px;
+  left: 0px;
+}
+
+.module-pattern__top img {
+  width: 100%;
+}
+
+.module-pattern__bottom {
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+.module-pattern__bottom img {
+  width: 100%;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+@media only screen and (max-width: 768px) {
+  .module-pattern__bottom {
+    bottom: -40px;
+  }
+  .module-pattern__top {
+    top: -3%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .module-pattern__bottom {
+    bottom: -20px;
+  }
+  .module-pattern__top {
+    top: -1%;
+  }
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  display: table;
+  content: "";
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+.module--cover {
+  background-image: url(../img/cover-image.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0px 100px;
+}
+
+.module--cover .container {
+  height: 100%;
+}
+
+.natural-row {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.natural-row__content {
+  flex: 1;
+  text-align: center;
+  padding: 0px 35px;
+}
+
+.natural-row__image {
+  flex: 0 0 45%;
+}
+
+.natural-row__image img {
+  width: 100%;
+  margin-bottom: -170px;
+  display: block;
+}
+
+.natural-logo img {
+  height: 70px;
+}
+
+.natural-title {
+  font-family: "DM Serif Display", serif;
+  font-size: 68px; /* 78px */
+  line-height: 70px; /* 80px */
+  margin: 20px 0px;
+  font-weight: 100;
+  color: #282f48;
+}
+
+.natural-text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.payment-image {
+  margin-top: 50px;
+}
+
+.payment-image img {
+  height: 34px;
+}
+
+.module--client {
+  padding: 40px 0px;
+}
+
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.client-list > li {
+  flex: 0 0 25%;
+  text-align: center;
+}
+
+.client-logo img {
+  width: 140px;
+  margin: auto;
+  object-fit: contain;
+  object-position: center;
+  height: 50px;
+  opacity: 0.4;
+}
+
+.module--premium {
+  padding: 0px 0px 40px;
+}
+
+.premium-row {
+  display: flex;
+  align-items: center;
+}
+
+.premium-row__image {
+  flex: 0 0 42%;
+}
+
+.premium-row__image img {
+  width: 100%;
+}
+
+.premium-row__content {
+  padding-left: 40px;
+  max-width: 600px;
+}
+
+.premium-box__title {
+  margin: 0px;
+  font-size: 60px; /* 70px */
+  line-height: 60px; /* 70px */
+  font-weight: 100;
+  font-family: "DM Serif Display", serif;
+  color: #282f48;
+}
+
+.premium-box__text {
+  margin: 30px 0px 20px;
+  color: #0e1f23;
+  font-size: 16px;
+}
+
+.module--tired {
+  padding: 100px 0px;
+  background-image: url(../img/tired-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.module--tired .module-leaf-pattern {
+  position: absolute;
+  top: -120px;
+  right: 50px;
+  width: 280px;
+  z-index: 20;
+}
+
+.module--tired .module-leaf-pattern img {
+  width: 100%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.tired-box {
+  max-width: 600px;
+}
+
+.tired-box__image {
+  display: none;
+}
+
+.tired-box__title {
+  font-size: 55px;
+  line-height: 55px;
+  font-family: "DM Serif Display", serif;
+  color: #282f48;
+  margin: 0px 0px 40px;
+}
+
+.tired-box__action {
+  margin-top: 30px;
+}
+
+.tired-points {
+  margin: 20px 0px 0px;
+  padding: 0px;
+  padding-left: 20px;
+  color: #c46343;
+}
+
+.tired-points > li {
+  font-size: 20px;
+}
+
+.tired-points > li span {
+  color: #0e1f23;
+  font-size: 16px;
+  display: block;
+  margin-top: -2px;
+  font-weight: 300;
+}
+
+.tired-points > li + li {
+  margin-top: 10px;
+}
+
+.module--benefits {
+  padding: 80px 0px;
+  background-color: #fefaf7;
+}
+
+.module--benefits .module__header {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.module--benefits .module__content {
+  margin-top: 80px;
+}
+
+.module--benefits .module-title {
+  font-size: 68px;
+  font-family: "DM Serif Display", serif;
+  color: #282f48;
+  margin: 0px 0px 30px;
+  font-weight: 100;
+}
+
+.module--benefits .module-text {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.benefits {
+  position: relative;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+.benefits-bottle {
+  max-width: 65%;
+  margin: 0 auto;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  left: 0px;
+}
+
+.benefits-bottle img {
+  width: 100%;
+}
+
+.benefits-bottle + .benefits-row {
+  margin-top: 100px;
+}
+
+.benefits-bottom {
+  margin-top: 70px;
+}
+
+.benefits-bottom .benefits-box {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.benefits-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits-row__column {
+  flex: 0 0 200px;
+}
+
+.benefits-box {
+  text-align: center;
+}
+
+.benefits-box:hover .benefits-box__icon {
+  background-color: #c46343;
+}
+
+.benefits-box__icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #282f48;
+  margin: 0 auto 20px;
+}
+
+.benefits-box__icon img {
+  width: 40px;
+}
+
+.benefits-box__title {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.benefits-box__text {
+  margin: 10px 0px 0px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.module--cbd {
+  padding: 80px 0px;
+}
+
+.module--cbd .module-title {
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  color: #282f48;
+  font-size: 60px;
+  margin: 0px;
+}
+
+.module--cbd .module__content {
+  margin-top: 80px;
+}
+
+.module--cbd .cbd-bottle {
+  width: 280px;
+  position: absolute;
+  top: -200px;
+  left: 0px;
+  z-index: 10;
+}
+
+.module--cbd .cbd-bottle img {
+  width: 100%;
+}
+
+.module--cbd .cbd-medicine {
+  position: absolute;
+  width: 200px;
+  right: 0px;
+  bottom: 50px;
+}
+
+.module--cbd .cbd-medicine img {
+  width: 100%;
+}
+
+.cbd-row {
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.cbd-row__column {
+  flex: 1;
+}
+
+.cbd-row__img {
+  width: 6px;
+  margin: 0px 50px;
+}
+
+.cbd-row__img img {
+  width: 100%;
+}
+
+.cbd-points {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.cbd-points > li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.cbd-points > li::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/done.png);
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+}
+
+.cbd-points--close > li::before {
+  background-image: url(../img/close.png);
+}
+
+.cbd-points > li span {
+  font-size: 16px;
+  color: #282f48;
+  display: block;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.cbd-points > li + li {
+  margin-top: 15px;
+}
+
+.cbd-points > li:last-child span {
+  border: none;
+}
+
+.module--tested {
+  padding: 100px 0px;
+  background-image: url(../img/tested-pattern.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.module--tested .module-pattern {
+  position: absolute;
+  top: -2%;
+  right: 0px;
+  left: 0px;
+}
+
+.module--tested .module-pattern img {
+  width: 100%;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.tested-box {
+  max-width: 500px;
+}
+
+.tested-box__image {
+  display: none;
+}
+
+.tested-box__title {
+  max-width: 90%;
+  font-size: 68px;
+  line-height: 65px;
+  font-family: "DM Serif Display", serif;
+  color: #282f48;
+  margin: 0px 0px 40px;
+}
+
+.tested-box__action {
+  margin-top: 30px;
+}
+
+.module--what {
+  padding: 100px 0px;
+  background-color: #fefaf7;
+}
+
+.module--what .module-pattern__top {
+  top: -8%;
+}
+
+.module--what .module-pattern {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  width: 280px;
+  z-index: 20;
+}
+
+.module--what .module-pattern img {
+  width: 100%;
+}
+
+.module--what .bottle-pattern {
+  position: absolute;
+  right: 0px;
+  bottom: -200px;
+  width: 250px;
+  z-index: 10;
+}
+
+.module--what .bottle-pattern img {
+  width: 100%;
+}
+
+.what-row {
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.what-row__image {
+  flex: 0 0 50%;
+}
+
+.what-row__image img {
+  width: 100%;
+}
+
+.what-row__content {
+  flex: 1;
+  padding-left: 50px;
+}
+
+.what-row__title {
+  color: #282f48;
+  font-size: 60px;
+  font-family: "DM Serif Display", serif;
+  margin: 0px;
+}
+
+.testimonial-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 60px;
+  list-style: none;
+  position: relative;
+}
+
+.testimonial-list .slick-track {
+  display: flex !important;
+}
+
+.testimonial-list .slick-track .slick-slide {
+  height: inherit;
+}
+
+.testimonial-list .slick-track > li + li .testimonial-box {
+  border-left: 1px solid #eaeaea;
+}
+
+.testimonial-list .slick-arrow {
+  border: none;
+  background-color: transparent;
+  padding: 0px;
+  font-size: 30px;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.testimonial-list .slick-arrow:hover {
+  opacity: 1;
+}
+
+.testimonial-list .slick-arrow:focus {
+  outline: none;
+}
+
+.testimonial-list .slick-prev {
+  position: absolute;
+  left: 50%;
+  margin-left: -40px;
+  bottom: -20px;
+}
+
+.testimonial-list .slick-next {
+  position: absolute;
+  right: 50%;
+  margin-right: -40px;
+  bottom: -20px;
+}
+
+.slick-current .testimonial-box {
+  opacity: 1;
+}
+
+.testimonial-box {
+  padding: 20px 40px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.5;
+}
+
+.testimonial-box__content {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eaeaea;
+  flex: 1;
+}
+
+.testimonial-box__content p {
+  margin: 0px;
+}
+
+.testimonial-box__footer {
+  display: flex;
+  margin-top: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-box__footer h3 {
+  margin: 0px;
+  color: #282f48;
+  font-family: "DM Serif Display", serif;
+}
+
+.testimonial-box__footer img {
+  height: 20px;
+}
+
+.module--reviews {
+  padding: 80px 0px;
+}
+
+.module--reviews .module__header {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.module--reviews .module__header img {
+  height: 100px;
+}
+
+.module--reviews .module-title {
+  margin: 20px 0px 0px;
+  font-family: "DM Serif Display", serif;
+  font-size: 70px;
+  color: #282f48;
+}
+
+.module--reviews .module__content {
+  margin-top: 50px;
+}
+
+.module--relax {
+  padding: 150px 0px;
+  background-image: url(../img/flower-bottle-pattern.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.relax-box {
+  max-width: 500px;
+  margin-left: auto;
+}
+
+.relax-box__title {
+  margin: 0px;
+  font-size: 65px;
+  font-family: "DM Serif Display", serif;
+  color: #282f48;
+}
+
+.relax-box__image {
+  display: none;
+}
+
+.module--insta {
+  padding: 80px 0px;
+  background-image: url(../img/mountain-cover.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.module--insta .module__header {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.module--insta .module-title {
+  font-family: "DM Serif Display", serif;
+  color: #282f48;
+  margin: 0px;
+  font-size: 65px;
+  text-align: center;
+}
+
+.module--insta .module__content {
+  margin-top: 50px;
+}
+
+.module--insta .module__action {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.insta-list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+}
+
+.insta-box {
+  margin: 10px;
+}
+
+.insta-box img {
+  width: 100%;
+}
+
+.footer {
+  padding: 30px 0px;
+  position: relative;
+}
+
+.footer-pattern {
+  position: absolute;
+  top: -40%;
+  right: 0px;
+  left: 0px;
+}
+
+.footer-pattern img {
+  width: 100%;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.footer__logo img {
+  height: 70px;
+}
+
+.footer__copyright p {
+  margin: 0px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1100px) {
+  .natural-title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .premium-box__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .premium-row__content {
+    padding-right: 20px;
+    max-width: 570px;
+  }
+  .tired-box {
+    max-width: 570px;
+    padding-left: 20px;
+  }
+  .module--benefits .module-title {
+    font-size: 60px;
+  }
+  .module--cbd .cbd-medicine {
+    bottom: 0px;
+  }
+  .cbd-row {
+    position: relative;
+    z-index: 10;
+  }
+  .tested-box {
+    max-width: 570px;
+    padding-left: 20px;
+  }
+  .what-row__image {
+    flex: 0 0 40%;
+  }
+  .what-row__content {
+    padding-left: 20px;
+  }
+  .relax-box {
+    max-width: 570px;
+    margin-left: auto;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+  .footer-pattern {
+    top: -30%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .natural-row {
+    display: block;
+  }
+  .natural-row__image {
+    max-width: 80%;
+    margin: 20px auto 0px;
+  }
+  .natural-row__image img {
+    margin-bottom: -25px;
+  }
+  .premium-row {
+    display: block;
+  }
+  .premium-row__content {
+    max-width: 100%;
+    padding: 0px 40px;
+    text-align: center;
+  }
+  .module--tired {
+    background-color: #f5f7f6;
+    background-image: none;
+  }
+  .module--tired .module-leaf-pattern {
+    top: -50px;
+    right: 50px;
+    width: 200px;
+  }
+  .module--tired .container {
+    padding: 0px;
+  }
+  .tired-box {
+    max-width: 100%;
+    padding: 0px;
+    margin-top: -80px;
+  }
+  .tired-box__image {
+    display: block;
+  }
+  .tired-box__image img {
+    width: 100%;
+  }
+  .tired-box__wrap {
+    padding: 30px 30px 0px;
+  }
+  .benefits {
+    max-width: 100%;
+  }
+  .benefits-bottle {
+    top: 25px;
+  }
+  .benefits-bottom {
+    margin-top: 10px;
+  }
+  .module--cbd .cbd-bottle {
+    width: 200px;
+  }
+  .module--cbd .cbd-medicine {
+    width: 150px;
+  }
+  .cbd-row {
+    max-width: 100%;
+  }
+  .cbd-row__img {
+    width: 6px;
+  }
+  .module--benefits .module-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .module--tested {
+    background-color: #d8e1ea;
+    background-image: none;
+  }
+  .module--tested .container {
+    padding: 0px;
+  }
+  .tested-box {
+    max-width: 100%;
+    padding: 0px;
+    margin-top: -100px;
+  }
+  .tested-box__image {
+    display: block;
+  }
+  .tested-box__image img {
+    width: 100%;
+  }
+  .tested-box__wrap {
+    padding: 30px;
+  }
+  .tested-box__title {
+    max-width: 100%;
+  }
+  .module--what .module-pattern__top {
+    top: -4%;
+  }
+  .module--tested .module-pattern {
+    top: -1%;
+  }
+  .what-row {
+    display: block;
+    max-width: 100%;
+  }
+  .what-row__content {
+    padding: 0px;
+    margin-top: 30px;
+  }
+  .testimonial-box {
+    padding: 20px;
+  }
+  .module--relax {
+    background-color: #f1f7fb;
+    background-image: none;
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  .module--relax .container {
+    padding: 0px;
+  }
+  .relax-box {
+    max-width: 100%;
+    padding: 0px;
+  }
+  .relax-box__image {
+    display: block;
+  }
+  .relax-box__image img {
+    width: 100%;
+  }
+  .relax-box__wrap {
+    padding: 30px;
+  }
+  .footer-pattern {
+    top: -22%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .natural-row__content {
+    padding: 0px;
+  }
+  .natural-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .client-list {
+    display: block;
+  }
+  .slick-dots {
+    margin: 30px 0px 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slick-dots > li button {
+    background-color: #c46343;
+    border: none;
+    font-size: 0px;
+    padding: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+  .slick-dots > li.slick-active button {
+    opacity: 1;
+  }
+  .slick-dots > li + li {
+    margin-left: 5px;
+  }
+  .premium-box__content {
+    padding: 0px 20px;
+  }
+  .premium-box__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .module--tired .module-leaf-pattern {
+    right: 20px;
+    width: 150px;
+    top: -30px;
+  }
+  .tired-box__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .module--benefits .module__header {
+    max-width: 100%;
+  }
+  .module--benefits .module-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .module--benefits .module-text {
+    max-width: 100%;
+  }
+  .benefits-row {
+    display: block;
+  }
+  .benefits-row__column + .benefits-row__column {
+    margin-top: 30px;
+  }
+  .benefits-bottle {
+    position: static;
+    max-width: 80%;
+  }
+  .benefits-bottle + .benefits-row {
+    margin-top: 0px;
+  }
+  .benefits-box {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  .benefits-bottom {
+    margin-top: 30px;
+  }
+  .module--cbd .module-title {
+    font-size: 50px;
+  }
+  .cbd-row {
+    display: block;
+  }
+  .cbd-row__img {
+    display: none;
+  }
+  .cbd-row__column {
+    padding-top: 30px;
+    margin-top: 20px;
+    border-top: 1px solid #000;
+  }
+  .tested-box__title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .module--what .module-pattern__top {
+    top: -2%;
+  }
+  .module--what .module-pattern {
+    width: 150px;
+  }
+  .module--what .bottle-pattern {
+    width: 160px;
+    bottom: -150px;
+  }
+  .what-row__title {
+    font-size: 40px;
+  }
+  .module--reviews .module-title {
+    font-size: 50px;
+  }
+  .relax-box__title {
+    font-size: 40px;
+  }
+  .footer-pattern {
+    top: -12px;
+  }
+  .module--tired {
+    padding: 50px 0px;
+  }
+  .module--cbd .cbd-bottle {
+    width: 150px;
+    top: -150px;
+  }
+  .module--insta .module-title {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .natural-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .premium-row__content {
+    padding: 0px 20px;
+  }
+  .premium-box__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .tired-box {
+    margin-top: -40px;
+  }
+  .tired-box__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .module--benefits {
+    padding: 50px 0px;
+  }
+  .module--cbd .module-title {
+    font-size: 40px;
+  }
+  .module--cbd .module__content {
+    margin-top: 50px;
+  }
+  .module--cbd .cbd-medicine {
+    width: 100px;
+  }
+  .module--tested {
+    padding: 50px 0px;
+  }
+  .tested-box {
+    margin-top: -50px;
+  }
+  .tested-box__title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .tested-box__wrap {
+    padding: 20px;
+  }
+  .module--what {
+    padding: 50px 0px;
+  }
+  .module--what .bottle-pattern {
+    width: 150px;
+  }
+  .module--reviews .module__header {
+    max-width: 90%;
+  }
+  .testimonial-list .slick-list {
+    padding: 0px 30px !important;
+  }
+  .module--insta {
+    padding: 50px 0px;
+  }
+}
